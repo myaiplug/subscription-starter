@@ -15,7 +15,7 @@ export default function Footer() {
             <span className="mr-2 border rounded-full border-zinc-700">
               <Logo />
             </span>
-            <span>ACME</span>
+            <span className="gradient-text font-display">MyAiPlug</span>
           </Link>
         </div>
         <div className="col-span-1 lg:col-span-2">
@@ -23,7 +23,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className="text-white transition duration-150 ease-in-out hover:text-myai-accent"
               >
                 Home
               </Link>
@@ -31,7 +31,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className="text-white transition duration-150 ease-in-out hover:text-myai-accent"
               >
                 About
               </Link>
@@ -39,17 +39,17 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className="text-white transition duration-150 ease-in-out hover:text-myai-accent"
               >
-                Careers
+                Features
               </Link>
             </li>
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className="text-white transition duration-150 ease-in-out hover:text-myai-accent"
               >
-                Blog
+                Pricing
               </Link>
             </li>
           </ul>
@@ -57,14 +57,14 @@ export default function Footer() {
         <div className="col-span-1 lg:col-span-2">
           <ul className="flex flex-col flex-initial md:flex-1">
             <li className="py-3 md:py-0 md:pb-4">
-              <p className="font-bold text-white transition duration-150 ease-in-out hover:text-zinc-200">
+              <p className="font-bold text-white transition duration-150 ease-in-out hover:text-myai-accent">
                 LEGAL
               </p>
             </li>
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className="text-white transition duration-150 ease-in-out hover:text-myai-accent"
               >
                 Privacy Policy
               </Link>
@@ -72,7 +72,7 @@ export default function Footer() {
             <li className="py-3 md:py-0 md:pb-4">
               <Link
                 href="/"
-                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+                className="text-white transition duration-150 ease-in-out hover:text-myai-accent"
               >
                 Terms of Use
               </Link>
@@ -83,7 +83,8 @@ export default function Footer() {
           <div className="flex items-center h-10 space-x-6">
             <a
               aria-label="Github Repository"
-              href="https://github.com/vercel/nextjs-subscription-payments"
+              href="https://github.com/myaiplug"
+              className="hover:text-myai-accent transition-colors"
             >
               <GitHub />
             </a>
@@ -93,18 +94,11 @@ export default function Footer() {
       <div className="flex flex-col items-center justify-between py-12 space-y-4 md:flex-row bg-zinc-900">
         <div>
           <span>
-            &copy; {new Date().getFullYear()} ACME, Inc. All rights reserved.
+            &copy; {new Date().getFullYear()} MyAiPlug. All rights reserved.
           </span>
         </div>
         <div className="flex items-center">
-          <span className="text-white">Crafted by</span>
-          <a href="https://vercel.com" aria-label="Vercel.com Link">
-            <img
-              src="/vercel.svg"
-              alt="Vercel.com Logo"
-              className="inline-block h-6 ml-4 text-white"
-            />
-          </a>
+          <span className="text-white">The Creators Hub</span>
         </div>
       </div>
     </footer>

@@ -7,13 +7,19 @@ const Logo = ({ ...props }) => (
     xmlns="http://www.w3.org/2000/svg"
     {...props}
   >
-    <rect width="100%" height="100%" rx="16" fill="white" />
+    <defs>
+      <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style={{ stopColor: '#7C4DFF', stopOpacity: 1 }} />
+        <stop offset="100%" style={{ stopColor: '#00C2FF', stopOpacity: 1 }} />
+      </linearGradient>
+    </defs>
+    <circle cx="16" cy="16" r="16" fill="url(#logoGradient)" />
     <path
-      fillRule="evenodd"
-      clipRule="evenodd"
-      d="M17.6482 10.1305L15.8785 7.02583L7.02979 22.5499H10.5278L17.6482 10.1305ZM19.8798 14.0457L18.11 17.1983L19.394 19.4511H16.8453L15.1056 22.5499H24.7272L19.8798 14.0457Z"
-      fill="black"
+      d="M16 8 L20 14 L16 20 L12 14 Z"
+      fill="white"
+      opacity="0.9"
     />
+    <circle cx="16" cy="16" r="3" fill="white" />
   </svg>
 );
 

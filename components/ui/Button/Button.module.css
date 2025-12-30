@@ -1,21 +1,28 @@
 .root {
-  @apply bg-white text-zinc-800 cursor-pointer inline-flex px-10 rounded-sm leading-6  transition ease-in-out duration-150 shadow-sm font-semibold text-center justify-center uppercase py-4 border border-transparent items-center;
+  @apply cursor-pointer inline-flex px-10 rounded-sm leading-6 transition ease-in-out duration-150 shadow-sm font-semibold text-center justify-center uppercase py-4 border items-center;
+  background: linear-gradient(135deg, #7C4DFF, #00C2FF);
+  color: white;
+  border-color: transparent;
 }
 
 .root:hover {
-  @apply bg-zinc-800 text-white border border-white;
+  background: linear-gradient(135deg, #6A3FE8, #00A8E0);
+  box-shadow: 0 0 20px rgba(124, 77, 255, 0.5);
+  border-color: #7C4DFF;
 }
 
 .root:focus {
-  @apply outline-none ring-2 ring-pink-500 ring-opacity-50;
+  @apply outline-none ring-2 ring-opacity-50;
+  ring-color: #7C4DFF;
 }
 
 .root[data-active] {
-  @apply bg-zinc-600;
+  background: linear-gradient(135deg, #6A3FE8, #00A8E0);
 }
 
 .loading {
-  @apply bg-zinc-700 text-zinc-500 border-zinc-600 cursor-not-allowed;
+  @apply text-zinc-500 border-zinc-600 cursor-not-allowed;
+  background: #1a1a2e;
 }
 
 .slim {
@@ -24,7 +31,8 @@
 
 .disabled,
 .disabled:hover {
-  @apply text-zinc-400 border-zinc-600 bg-zinc-700 cursor-not-allowed;
+  @apply text-zinc-400 border-zinc-600 cursor-not-allowed;
+  background: #1a1a2e;
   filter: grayscale(1);
   -webkit-transform: translateZ(0);
   -webkit-perspective: 1000;

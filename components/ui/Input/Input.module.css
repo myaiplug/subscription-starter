@@ -1,7 +1,15 @@
 .root {
-  @apply bg-black py-2 px-3 w-full appearance-none transition duration-150 ease-in-out border border-zinc-500 text-zinc-200;
+  @apply py-2 px-3 w-full appearance-none transition duration-150 ease-in-out border text-zinc-200;
+  background-color: rgba(17, 17, 34, 0.5);
+  border-color: rgba(124, 77, 255, 0.3);
+}
+
+.root:hover {
+  border-color: rgba(124, 77, 255, 0.5);
 }
 
 .root:focus {
-  @apply outline-none;
+  @apply outline-none ring-2 ring-opacity-50;
+  border-color: #7C4DFF;
+  background-color: rgba(17, 17, 34, 0.7);
 }

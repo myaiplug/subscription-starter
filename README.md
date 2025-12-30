@@ -1,8 +1,6 @@
-# Next.js Subscription Payments Starter
+# MyAiPlug Subscription Starter
 
-
-> [!WARNING]  
-> This repo has been sunset and replaced by a new template: https://github.com/nextjs/saas-starter
+A Next.js subscription payments starter with MyAiPlug branding and aesthetic.
 
 ## Features
 
@@ -10,6 +8,17 @@
 - Powerful data access & management tooling on top of PostgreSQL with [Supabase](https://supabase.io/docs/guides/database)
 - Integration with [Stripe Checkout](https://stripe.com/docs/payments/checkout) and the [Stripe customer portal](https://stripe.com/docs/billing/subscriptions/customer-portal)
 - Automatic syncing of pricing plans and subscription statuses via [Stripe webhooks](https://stripe.com/docs/webhooks)
+- MyAiPlug brand colors and styling
+- Custom gradient logo and animations
+
+## Branding
+
+This starter uses MyAiPlug's signature aesthetic:
+- **Primary Color**: Purple (#7C4DFF)
+- **Accent Color**: Cyan (#00C2FF)
+- **Warm Accent**: Orange (#FFB84D)
+- **Background**: Dark gradient (#0D0D0F to #111122)
+- **Fonts**: Inter (body), Orbitron (display)
 
 ## Demo
 

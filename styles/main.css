@@ -1,6 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Orbitron:wght@600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --bg-dark: #0D0D0F;
+  --bg-panel: #111122;
+  --primary: #7C4DFF;
+  --accent: #00C2FF;
+  --accent-warm: #FFB84D;
+}
 
 *,
 *:before,
@@ -9,7 +19,7 @@
 }
 
 *:focus:not(ol) {
-  @apply outline-none ring-2 ring-pink-500 ring-opacity-50;
+  @apply outline-none ring-2 ring-[#7C4DFF] ring-opacity-50;
 }
 
 html {
@@ -24,11 +34,20 @@ html {
 
 html,
 body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue',
+  font-family: 'Inter', -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue',
     'Helvetica', sans-serif;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
-  @apply text-white bg-zinc-800 antialiased;
+  @apply text-white antialiased;
+  background: linear-gradient(120deg, var(--bg-dark), var(--bg-panel), #0A0A0F, var(--bg-dark));
+  background-size: 400% 400%;
+  animation: gradient 22s ease infinite;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 body {
@@ -56,4 +75,19 @@ p a {
 
 .height-screen-helper {
   min-height: calc(100vh - 80px);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glow-primary {
+  box-shadow: 0 0 40px rgba(124, 77, 255, 0.4);
+}
+
+.glow-accent {
+  box-shadow: 0 0 40px rgba(0, 194, 255, 0.4);
 }
